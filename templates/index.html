@@ -1,0 +1,94 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>{% block title %}Index{% endblock title%}</title>
+    {% block head%}{% endblock%}
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper blue">
+            <a href="/" class="brand-logo">U&D</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li>
+                    <form action="/search" method="GET">{% csrf_token %}
+                        <div class="row">
+                            <div class="col s12">
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <i class="material-icons prefix">search</i>
+                                        <input type="text" class="autocomplete" name="search" id="autocomplete-input" placeholder="Search" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </li>
+                <li><a href="/">Main</a></li>
+                <li><a href="/admin">Admin</a></li>
+                <li><a href="/upload">Upload</a></li>
+                {% if user.is_authenticated%}
+                <li> Hello {{user.first_name}}.. </li>
+                <li><i class="material-icons prefix"><a href='/logout'>logout</a></i></li>
+                {% else %}
+                <li><a href="/login">Login</a></li>
+                <li><a href="/register">Register</a></li>
+                {% endif %}
+            </ul>
+        </div>
+    </nav>
+    {% block content %}
+    <div class="row">
+        <div class="col">
+            {% for book in shelf %}
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-content">
+                        <h5>{{book.name}}</h5>
+                        <p>{{book.discribe|slice:":20"}}..</p>
+                        <p>{{book.auther}}</p>
+                    </div>
+                    {% if user.is_authenticated%}
+                    <div class="card-action">
+                        <a href="update/{{book.id}}" class=" waves-light orange btn">edit</a>
+                        <a href="delete/{{book.id}}" class=" waves-light red btn">Delete</a>
+                        <a href="{{book.file.url}}" download="{{book.file.url}}" class=" waves-light red btn">Download</a>
+                    </div>
+                    {% endif %}
+
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endblock %} {% block body %} {% endblock body %}
+</body>
+<footer>
+    {% block footer%}{% endblock %}
+    <center>
+        <ul class="pagination">
+            {% if shelf.has_previous %}
+            <li class="disabled"><a href="?page={{shelf.previous_page_number}}"><i
+                        class="material-icons">chevron_left</i></a></li>
+            {% endif %} {% for num in shelf.paginator.page_range %} {% if shelf.number == num %}
+            <li class="active"><a href="">{{num}}</a></li>
+            {% else%}
+            <li class="waves-effect">
+                <a href="?page={{num}}">{{num}}</a></li>
+            {% endif%} {% endfor %} {% if shelf.has_next %}
+            <li class=" waves-effect "><a href="?page={{shelf.next_page_number}} "><i
+                        class="material-icons ">chevron_right</i></a></li>
+            {% endif %}
+        </ul>
+    </center>
+</footer>
+
+</html>

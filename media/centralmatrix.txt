@@ -1,0 +1,66 @@
+#include<iostream>
+#include<cstring>
+using namespace std;
+
+int  main()
+{
+    
+ long long int i,j,n,k,l,p,x,y;
+   
+   
+   scanf("%llu",&n);
+   long long int a[n][n];
+   scanf("%llu%llu%llu",&x,&y,&p);
+   for(i=0;i<n;i++)
+   {
+       for(j=0;j<n;j++)
+       {
+         
+                 if(((j-i)<=0)&&(i<=(n/2)))
+                     {
+					   a[i][j]=j;
+                        cout<<a[i][j]<<" ";
+						}
+				else if(i>(n/2))
+                        {
+                        	if(j<(n-i))
+                        	{
+							
+							    a[i][j]=j;
+                             cout<<a[i][j]<<" ";
+                            }
+                            else{
+                            		if(j<=i)
+                            		  {
+                            			a[i][j]=n-i-1;
+                            			cout<<a[i][j]<<" ";
+									  }
+									else
+										{
+									    	a[i][j]=n-j-1;
+									    	cout<<a[i][j]<<" ";
+										}
+							    }
+						}		
+                else{
+                
+                           if(j<(n-i))
+                          {
+							    a[i][j]=i;
+                             cout<<a[i][j]<<" ";
+                          }
+                        
+                           else
+                           {
+							     a[i][j]=n-j-1;
+							  cout<<a[i][j]<<" ";
+						   }
+                       }
+                    
+                        
+           }
+            cout<<endl;        
+             
+     }
+   
+}

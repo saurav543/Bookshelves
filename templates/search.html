@@ -1,0 +1,38 @@
+{% extends "index.html" %}
+
+{% block title %}Search{% endblock title %} 
+{% block body %}
+    <h3 style="text-align:center">Search result:</h3>
+    {% if allsearch|length < 1 %} 
+        <div class="container">
+            <p>Your search -<b>{{query|slice:"100"}}</b>- did not match any documents.</p>
+            <h5>Suggestions:</h5>
+            <ol>
+                <li>Make sure that all words are spelled correctly.</li>
+                <li>Try different keywords.</li>
+                <li>Try more general keywords.</li>
+                <li>Try fewer keywords.</li>
+            </ol>
+        </div>
+    {% else %}
+        <div class="row">
+            <div class="col s12 m3">
+            {% for book in allsearch %}
+                <div class="card">
+                        <div class="card-content">
+                            <h5>{{book.name}}</h5>
+                            <p>{{book.discribe}}</p>
+                            <p>{{book.auther}}</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="/update/{{book.id}}" class=" waves-light orange btn">edit</a>
+                            <a href="/delete/{{book.id}}" class=" waves-light red btn">Delete</a>
+                            <a href="{{book.file.url}}" download="{{book.file.url}}" class=" waves-light red btn">Download</a>
+                        </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    {% endif %} 
+{% endblock body%}
+{% block footer%}{% endblock %}

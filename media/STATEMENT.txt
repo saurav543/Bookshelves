@@ -1,0 +1,154 @@
+
+ 19-09-2020 10:39:04               BANK OF BARODA, BISALPUR                                                                Page  1
+ REP31
+                                        Customer Account Ledger Report
+
+ Report To          : M
+ SolId              :
+ Set Id             : 0655   BISALPUR,UP
+ Gl Sub Head Code   :
+ Acct Range         : 06550100006245  to  06550100006245
+ Currency Code      :
+ Account Label      :
+ Open/Closed A/cs (O/C) :
+ Period             : 01-04-2019 to 19-09-2020
+ Limit Details      : Y
+ Order by GL. Date.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 19-09-2020 10:39:04               BANK OF BARODA BISALPUR                                                                 Page  2
+
+                                    Customer Account Ledger Report from 01-04-2019 to 19-09-2020
+
+ Service OutLet   : 0655  BISALPUR,UP
+ Account No       : 06550100006245    INR CHUNNI LAL
+ Gl Sub Head Code :
+ Opening Balance  :          4,29,021.14Cr
+ Peg Review date  : 31-12-2099
+ ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   GL.     Value       Instrmnt         Particulars                                               Transaction          Transaction                Balance   Entry     Verified
+   Date    Date         Number                                                                   Debit Amount        Credit Amount                          User Id   User Id
+ ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+ ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                 Order by GL. Date.
+ 02-04-2019  02-04-2019                 ACH Credit/00000000CPSMSGENERIC/C031932085134                                       8,145.00          4,37,166.14Cr FINADM    FINADM
+ 03-05-2019  30-04-2019                 06550100006245:Int.Pd:01-02-2019 to 30-04-2019                                      3,579.00          4,40,745.14Cr RP088568  SYSTEM
+ 04-05-2019  04-05-2019                 DUPLICATE STATEMENT CHARGES                                      118.00                               4,40,627.14Cr SYSTEM    KK124707
+ 10-05-2019  10-05-2019          534658 RAJEEV NATH AGRAWAL                                         1,00,000.00                               3,40,627.14Cr KK124707  AM102275
+ 26-06-2019  26-06-2019                 ACH Credit/Credit Through PFMS/C061921237799                                       12,000.00          3,52,627.14Cr FINADM    FINADM
+ 26-06-2019  26-06-2019                 ACH Credit/Credit Through PFMS/C061921237966                                       15,000.00          3,67,627.14Cr FINADM    FINADM
+ 08-07-2019  08-07-2019                 APBS-CR/IOC Ref No3000029610/9060788129029                                            169.79          3,67,796.93Cr FINADM    FINADM
+ 10-07-2019  10-07-2019                 APBS-CR/IOC Ref No3000030147/9080782555721                                            169.79          3,67,966.72Cr FINADM    FINADM
+ 22-07-2019  22-07-2019                 APBS-CR/IOC Ref No3000033463/9180789213183                                            169.79          3,68,136.51Cr FINADM    FINADM
+ 02-08-2019  31-07-2019                 06550100006245:Int.Pd:01-05-2019 to 31-07-2019                                      3,155.00          3,71,291.51Cr SG107949  SG107949
+ 29-08-2019  29-08-2019                 ACH Credit/CPSMSGENERIC/C081918146160                                               5,620.00          3,76,911.51Cr FINADM    FINADM
+ 02-11-2019  31-10-2019                 06550100006245:Int.Pd:01-08-2019 to 31-10-2019                                      3,074.00          3,79,985.51Cr SG107949  SG107949
+ 07-12-2019  07-12-2019                 ACH Credit/Credit Through PFMS/C111916453864                                       10,800.00          3,90,785.51Cr FINADM    FINADM
+ 07-12-2019  07-12-2019                 ACH Credit/Credit Through PFMS/C111916454372                                       10,800.00          4,01,585.51Cr FINADM    FINADM
+ 13-12-2019  13-12-2019                 APBS-CR/IOC Ref No3000081627/9121212500906                                            169.00          4,01,754.51Cr FINADM    FINADM
+ 08-01-2020  08-01-2020                 ACH Credit/Credit Through PFMS/C121928084262                                       14,700.00          4,16,454.51Cr FINADM    FINADM
+ 08-01-2020  08-01-2020                 ACH Credit/Credit Through PFMS/C121928084549                                       13,720.00          4,30,174.51Cr FINADM    FINADM
+ 20-01-2020  20-01-2020                 APBS-CR/IOC Ref No3000094350/0011814840203                                            183.10          4,30,357.61Cr FINADM    FINADM
+ 03-02-2020  03-02-2020                 APBS-CR/IOC Ref No3000098642/0020116071744                                            183.10          4,30,540.71Cr FINADM    FINADM
+ 05-02-2020  31-01-2020                 06550100006245:Int.Pd:01-11-2019 to 31-01-2020                                      3,279.00          4,33,819.71Cr RS117642  RS117642
+ 13-03-2020  13-03-2020                 ACH Credit/Credit Through PFMS/C032012017452                                       17,500.00          4,51,319.71Cr FINADM    FINADM
+ 17-03-2020  17-03-2020                 APBS-CR/IOC Ref No5255499715/0031570056244                                            256.71          4,51,576.42Cr FINADM    FINADM
+ 17-03-2020  17-03-2020                 ACH Credit/CPSMSGENERIC/C032020449014                                              42,464.00          4,94,040.42Cr FINADM    FINADM
+ 04-05-2020  30-04-2020                 06550100006245:Int.Pd:01-02-2020 to 30-04-2020                                      3,633.00          4,97,673.42Cr FINADM    FINADM
+ 12-06-2020  12-06-2020                 APBS-CR/IOC Ref No5459665456/0061180479437                                             24.67          4,97,698.09Cr FINADM    FINADM
+ 14-07-2020  14-07-2020                 ACH Credit/PM KISAN BEN INST 1/K062005032031                                        2,000.00          4,99,698.09Cr FINADM    FINADM
+ 01-08-2020  31-07-2020                 06550100006245:Int.Pd:01-05-2020 to 31-07-2020                                      3,611.00          5,03,309.09Cr FINADM    FINADM
+ 09-08-2020  09-08-2020                 ACH Credit/PM KISAN BEN INST 2/K082000F604E1                                        2,000.00          5,05,309.09Cr FINADM    FINADM
+ 14-09-2020  14-09-2020                 APBS-CR/IOC Ref No5693772719/0091367595836                                             25.17          5,05,334.26Cr FINADM    FINADM
+
+ ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                 Order by GL. Date.
+ ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+          Date                  Limits(S.L.+TODs)                 Draw Power                Int Rate
+ ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+       01-04-2019                               0.00                            0.00          3.5000
+       01-04-2020                               0.00                            0.00          3.0000
+       01-06-2020                               0.00                            0.00          2.7500
+                                     -------------------------------------------------------
+
+
+ 19-09-2020 10:39:04               BANK OF BARODA BISALPUR                                                                 Page  3
+
+                                    Customer Account Ledger Report from 01-04-2019 to 19-09-2020
+
+ Service OutLet   : 0655  BISALPUR,UP
+ Account No       : 06550100006245    INR CHUNNI LAL
+ Gl Sub Head Code :
+ B/F Balance      :          5,05,334.26Cr
+ Peg Review date  : 31-12-2099
+
+
+
+
+
+
+       20-07-2019                               0.00                            0.00          3.2500
+
+ ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                            Page Total Credit  :                          0
+                            Page Total Debit   :                          0
+
+                            Closing Balance    :                5,05,334.26
+
+                            Total Credit       :                1,76,431.12
+                            Total Debit        :                1,00,118.00
+
+                            Signature          :
+
+
+                                                                                                                   Signature
+                                        *************  3  pages printed. End of Report*************
+
